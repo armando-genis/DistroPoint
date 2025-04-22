@@ -29,8 +29,8 @@ class ScanContext:
     # You can uncomment these for multiple resolutions
     # sector_res = np.array([45, 90, 180, 360, 720])
     # ring_res = np.array([10, 20, 40, 80, 160])
-    sector_res = np.array([360])
-    ring_res = np.array([80])
+    sector_res = np.array([720])
+    ring_res = np.array([160])
     max_length = 80
     
      
@@ -282,7 +282,8 @@ if __name__ == "__main__":
     
 
     # Process the dataset to create images for deep learning training
-    process_dataset_to_images(metadata, output_dir='scan_dl_images_origianl', image_size=(80, 360))
+    process_dataset_to_images(metadata, output_dir='scan_dl_images_second', image_size=(160, 720))
+    # process_dataset_to_images(metadata, output_dir='scan_dl_images_origianl', image_size=(80, 360))
     # process_dataset_to_images(metadata, output_dir='scan_dl_images', image_size=(128, 512))
 
     
